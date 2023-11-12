@@ -1,6 +1,4 @@
-import Login from "./components/Login";
-import LoginTwo from "./components/LoginTwo";
-import MainCard from "./components/MainCard";
+import MainCard from './components/MainCard';
 function App() {
   return (
     <>
