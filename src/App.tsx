@@ -1,16 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-
+import Login from "./components/Login";
+import LoginTwo from "./components/LoginTwo";
+import MainCard from "./components/MainCard";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="font-bold font-2xl text-blue-400">
-        This is a sample text
-      </div>
+      <nav className="bg-black flex flex-row justify-between items-center px-4 py-4">
+        <div className="">
+          <h1 className="text-2xl text-white">Simple Designs</h1>
+        </div>
+        <div className="flex flex-row items-center space-around">
+          <button className="px-2 py-1 rounded-md text-white bg-red-500">
+            More
+          </button>
+        </div>
+      </nav>
+      <main>
+        <MainCard />
+      </main>
     </>
   );
 }

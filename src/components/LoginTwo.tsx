@@ -3,7 +3,7 @@ import { FcGoogle } from "react-icons/fc";
 const Login = () => {
   return (
     <div className="w-3/6">
-      <div className="mt-4">
+      <div className="pt-4 bg-gray-100 w-[350px] shadow-lg rounded-lg">
         <div className="flex flex-row justify-center">
           <FaBullhorn className="text-3xl text-blue-700 font-bold" />{" "}
           <span className="text-3xl text-blue-700 font-bold">Vote</span>
