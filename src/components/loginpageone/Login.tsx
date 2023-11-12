@@ -1,8 +1,8 @@
-import LoginImg from "../assets/logins.svg";
-import { GoPerson } from "react-icons/go";
 import { AiFillLock } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import { GoPerson } from "react-icons/go";
 import { ImGoogle3 } from "react-icons/im";
+import LoginImg from "../../assets/logins.svg";
 const Login = () => {
   return (
     <div className="shadow-lg bg-gray-100 rounded-lg flex flex-col p-8 justify-center w-[350px] mx-[5%]">

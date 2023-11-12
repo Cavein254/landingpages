@@ -1,5 +1,5 @@
-import Login from "../components/Login";
-import LoginTwo from "../components/LoginTwo";
+import Login from "../components/loginpageone/Login";
+import LoginTwo from "../components/loginpageone/LoginTwo";
 function App() {
   return (
     <>
