@@ -9,11 +9,11 @@ const Header = () => {
           <p className="p-0 -mt-2">LX</p>
         </div>
       </div>
-      <div className="flex flex-row justify-between border-black border-2 w-1/3">
+      <div className="flex flex-row justify-between w-1/3 items-center -mt-4 text-sm">
         <div>
           <h4 className="text-blue-900 font-bold">My Account</h4>
         </div>
-        <div className="flex flex-row text-blue-900 font-bold items-center">
+        <div className="flex flex-row text-blue-900 font-bold items-center justify-center">
           <span className="border-2 border-orange-400 rounded-[100%] px-2">
             <p>4</p>
           </span>
@@ -23,9 +23,9 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search for product"
-            className="relative py-2 px-4 border-2 border-blue-900"
+            className="relative py-2 px-4 border-2 border-blue-900 rounded-md"
           />
-          <BsSearch className="absolute right-0 -mt-4 mr-4" />
+          <BsSearch className="absolute right-0 -mt-7 mr-7" />
         </div>
       </div>
     </div>
