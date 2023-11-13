@@ -1,5 +1,10 @@
+import Header from "./Header";
 const Store = () => {
-  return <h1 className="underline text-red-600">Comme De Store</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Store;
