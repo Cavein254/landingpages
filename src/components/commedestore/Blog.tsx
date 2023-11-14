@@ -24,7 +24,7 @@ const Blog = () => {
   });
   return (
     <>
-      <div className="mx-[7%] bg-blue-100 my-8 flex flex-col justify-center items-center">
+      <div className="mx-[7%] bg-blue-100 my-8 flex flex-col justify-center items-center py-8">
         <div className="py-4">
           <h5 className="font-bold uppercase text-center text-xl">
             Fresh from the blog
@@ -49,8 +49,8 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2">
-              <div className=" flex flex-col justify-center items-center md:flex-row md:ml-[4%]">
+            <div className="md:w-1/2 md:flex-row flex flex-col">
+              <div className=" flex flex-col justify-center items-center md:flex-row md:ml-[4%] md:w-[65%] mx-4">
                 <p>
                   <span className="font-bold text-4xl">L</span>
                   orem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -78,7 +78,7 @@ const Blog = () => {
                   eleifend euismod. Aenean accumsan tempus nisl vel blandit.
                 </p>
               </div>
-              <div className="border-[1px] border-gray-400 flex flex-col p-4 mt-4 mx-8">
+              <div className="border-[1px] border-gray-400 flex flex-col p-4 mt-4 mx-8 md:w-[35%] h-fit">
                 <div className="flex justify-center items-center">
                   <img
                     src="https://images.unsplash.com/photo-1559629819-638a8f0a4303?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
