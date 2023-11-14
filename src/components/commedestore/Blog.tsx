@@ -1,21 +1,27 @@
-const Person = () => {
+import { BlogUsers } from "./blogUsers";
+const Person = ({ item }) => {
   return (
-    <div className="flex flex-col justify-center items-center w-3/4">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=50&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-      <h5>Joe Hishi: Interview</h5>
-      <h6 className="text-gray-400">Aug 23 2023</h6>
-      <p className="text-gray-400 text-center">
+    <div className="flex flex-col justify-center items-center w-3/4 my-4">
+      <img
+        src={item.url}
+        alt={item.title}
+        className="rounded-[100%] flex flex-row justify-center items-center object-cover"
+      />
+      <h5 className="text-center mt-4">{item.title}</h5>
+      <h6 className="text-gray-400 mt-2">{item.date}</h6>
+      <p className="text-gray-400 text-center flex mt-4">
         {" "}
         Duis id faucibus purus. Morbi feugiat, mi ut varius faucibus, massa
         ipsum iaculis massa, et finibus nulla mauris eu erat. Phasellus ut
-        pharetra risus. Maecenas in commodo quam. Proin porttitor, dolor eu
-        sollicitudin vehicula, nunc augue placerat lorem, ac lobortis sem augue
-        nec metus. Suspendisse id quam fel
+        pharetra risus.{" "}
       </p>
     </div>
   );
 };
 const Blog = () => {
+  const users = BlogUsers.map((item) => {
+    return <Person key={item.id} item={item} />;
+  });
   return (
     <div className="mx-[7%] bg-blue-100 my-8 flex flex-col justify-center items-center">
       <div className="py-4">
@@ -23,7 +29,9 @@ const Blog = () => {
           Fresh from the blog
         </h5>
       </div>
-      <Person />
+      <div className="flex flex-col justify-center items-center md:flex-row">
+        {users}
+      </div>
     </div>
   );
 };
