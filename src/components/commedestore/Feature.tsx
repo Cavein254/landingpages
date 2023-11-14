@@ -1,4 +1,5 @@
 import FeaturedItems from "./FeatureItems";
+import PopularItems from "./PopularItems";
 const Feature = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Feature = () => {
         <div></div>
       </div>
       <FeaturedItems />
+      <PopularItems />
     </>
   );
 };
