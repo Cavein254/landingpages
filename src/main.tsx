@@ -6,6 +6,7 @@ import "./index.css";
 import PageOne from "./pages/PageOne.tsx";
 import PageTwo from "./pages/PageTwo.tsx";
 import Store from "./components/commedestore/index";
+import ProductProvider from "./context/ProductProvider.tsx";
 const router = createBrowserRouter([
   {
     path: "/pagetwo",
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProductProvider>
+      <RouterProvider router={router} />
+    </ProductProvider>
   </React.StrictMode>,
 );
