@@ -42,8 +42,8 @@ const FeaturedItems = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex md:flex-row">
-        <div className="flex flex-col w-[50%]">
+      <div className="md:flex-row flex-col-reverse flex">
+        <div className="flex flex-col md:w-[50%]">
           <div className="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start bg-white">
             <div className="md:m-8">
               <h4 className="font-bold text-2xl">Women's Clothings</h4>
@@ -59,7 +59,7 @@ const FeaturedItems = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col bg-blue-100 w-[50%]">
+        <div className="flex flex-col bg-blue-100 md:w-[50%]">
           <div className="flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start">
             <div className="md:m-8">
               <h4 className="font-bold text-2xl">Men's Clothes</h4>
